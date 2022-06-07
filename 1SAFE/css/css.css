@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: url(https://get.wallhere.com/photo/1920x1200-px-benjamin-franklin-macro-money-paper-1727071.jpg) no-repeat; 
+    background-size: cover;
+    text-align: center;
+    line-height: 1.75;
+}
+
+.link {
+    color: crimson;
+    text-decoration: none;
+}
+
+.link:visited {
+    color: darkred;
+}
+
+.link:focus {
+    outline: 2px solid black;
+}
+
+.link:hover {
+    color: red;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.link:active {
+    color: brown;
+}
+
+.text {
+    color: #FFFFFF;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px hsl(107, 100%, 55%), 0 0 30px hsl(107, 100%, 55%), 0 0 40px hsl(107, 100%, 55%), 0 0 55px hsl(107, 100%, 55%), 0 0 75px hsl(107, 100%, 55%);
+    font-family: "arial",
+        sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.form__fieldset{
+    margin: 50px;
+    padding: 50px;
+    overflow: hidden;
+    margin: 30px auto;
+    width: 533px;
+    height: 319px;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 34px 4px #000000;
+    background: rgb(0, 0, 0, 0.8);
+}
+
+.form__labelText {
+    text-align: left;
+    margin: 0px -14px;
+    width: 100%;
+    max-width: 170px;
+    width: 171px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.form__result {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 3px, #FFF 0px 0px 8px, #FFF 0px 0px 12px, #FF2D95 0px 0px 14px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 25px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 50px;
+    font-family: "arial",
+        sans-serif;
+    font-size: 28px;
+    line-height: 2.5;
+}
+
+.form__field {
+    background-color: #292c2b;
+    color: #dbc6d1;
+    margin-left: 0px;
+    border: 1px solid #af7c7c;
+    padding: 6px 9px;
+    max-width: 250px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: rgb(146, 138, 138);
+}
+
+.form__button {
+    float: left;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px hsl(107, 100%, 55%), 0 0 30px hsl(107, 100%, 55%), 0 0 40px hsl(107, 100%, 55%), 0 0 55px hsl(107, 100%, 55%), 0 0 75px hsl(107, 100%, 55%);
+    width: 432px;
+    border: 1px solid rgb(44, 105, 36);
+    background-color:#000000;
+    box-shadow: 0px 0px 34px 4px #000000;
+    padding: 5px;
+    border-radius: 5px;
+    height: 39px;
+    margin: 0px -12px;
+}
+
+.form__button:hover {
+    background-color:hsl(113, 49%, 34%);
+}
+
+.form__button:active {
+    background-color:hsl(0, 0%, 10%);
+}
+

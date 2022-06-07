@@ -1,0 +1,220 @@
+RANO STYLIZACJA LINKOW
+
+<!-- Szkielet strony: -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js.js" ></script>
+    <link href="css.css" rel="stylesheet">
+    <style>
+        body {
+            background: url  (link do obrazku tła.Musi być w nawiasach) ;
+        }
+    </style>
+</head>
+<body class="back text">
+    
+</body>
+</html>
+
+<!--
+-----------------------------------------------------------------------------
+
+css.css:
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.text{
+   max-width:80%
+}
+
+
+.back {
+    background-color: 
+}
+
+-----------------------------------------------------------------------------
+
+js.js:
+
+console.log("Made by OlkMill");
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ZAGOTÓWKA DO LIŃKÓW(link):
+
+<a class="link" target="_blank" rel="noreferrer nooper" href="https://"
+title="Tekst pojawajacy sie przy najechaniu myszka">Tekst, który widzi
+uzytkownik jako lińk</a>
+
+ROZBIÓR:
+
+<a class="link" href="https://">Tekst</a> - Jest to lińk. Użytkownik bedzie widział to, co jest
+ miedzy literami a(w tym przypadku "Tekst"). Lińkiem bedzie sam napis "Tekst";
+
+target="_blank" - służy do otwierania stron na nowej karcie;
+
+rel="noreferrer nooper" - trzeba dodawać z powodu bezpecziestwa;
+
+title="Tekst" - używa sie do opisu tego dokad nas kieruje lińk(tekst pojawi sie i 
+bedzie widoczny przy najechaniu myszka na lińk);
+
+  -------------------------------------------------------
+
+ZAGOTÓWKA LIŃKU DO POBRANIA FAILOW(download):
+
+<a class="link" href="lińk do failu rozsrzerzeniem" download="plyazh-letniy.jpg">Tekst, który widzi
+uzytkownik jako lińk</a></p>
+
+ -------------------------------------------------------
+
+
+ZAGOTÓWKA LIŃKOW DO TWORZENIA SEKCJI(scroll):
+
+<a href="#drugaSekcja">Tekst służacy scrollem do dzialu strony</a>
+
+<section id="drugaSekcja"> - wstawiamy w miwjsce do którego dażymy;
+
+ -------------------------------------------------------
+
+STYLOWANIE LIŃKÓW. Robi sie w CSS(linkstyle):
+
+color: crimson; - kolor lińka;
+
+text-decoration: none; - usuwa podkreślenie lińka;
+
+.link:visited {color: darkred; } - stylowanie koloru odwiedzonych lińków. PSEUDOKLASA!;
+
+.link:focus { outline: 2px solid black; } - stylowanie outline wydzielenia lińku
+                                                     przy użyciu TAB;
+
+.link:hover {
+    color: red;
+    border-bottom: 1px solid;   
+    outline: none;
+}                                                
+
+.link:active { color: brown } - zmienia kolor linka przy wciskaniu i trzymaniu myszki na lińku;
+
+backgroun-color: crimson;
+color: white;
+padding: 5px 10px;
+border-bottom: 1px solid;  - tworzy przycisk z linku; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TWORZENIE TAB3LI(tabele):
+
+<table></table> - poczatek i koniec tabeli;
+
+<caption></caption> - opisuje treść tabeli;
+
+<tr></tr> -tworzenie wierszow(rzadkow);
+
+<td></td> - to samo, tylko nie wyroznione;
+
+<th scope="col"></th> - tworzenie naglowkow kolumn;
+
+<th scope="row"></th> - tworzenie naglowkow wierszy;
+
+<td rowspan="2"></td> - pionowe laczenie komorek;
+
+<td colspan="2"></td> - poziome laczenie komurek;
+
+STYLIZACJA TABELI:
+
+border: 1px solid #ccc - dodaje scianki;
+
+border-collapse: collapse; - robi 1 scianke komorek zamiast 2;
+
+border-width: 0 0 1px; - robi niepelna komorke;
+
+padding: 20px; - powieksza komorki;
+
+text-aligh: center; - wysrodkowanie komorek;
+
+caption-side: bottom; - polozenie naglowka(<caption>(w tym przypadku z dolu));
+
+margin-top: 20px; - odstep;
+
+background-color: crimson;
+color: white;
+font-weight: normal; - zmienia kolor tla komorki;
+
+width: 100%; - tabela wypelnia cala dostepna szerokosc;
+
+.tableRow:nth-child(even) { background-color: #eee; } - robi tabele parzysta.PSEUDOKLASA!;
+
+.tableRow:hover { background-color: #ddd; } - podswietlenie komorek przy najechaniu myszka;
+
+vertical-align: top; -wyrownywnie zawartosci komorki do gory;
+
+vertical-align: bottom; -wyrownywnie zawartosci komorki do dolu;
+
+vertical-align: middle; -wyrownywnie zawartosci komorki do centru;
+
+overflow-x: auto; - srawia, ze tabela sie nie zwija na wazkich ekranach;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+DODAWANIE I STYLIZACJA ELEMENTOW:
+
+<div class="element"> - dodawanie elementu;
+
+Stylizacja w css:
+
+width: 300px; - Szerokosc;
+
+height: 200px; - wysokosc;
+
+background-color: grey; - kolor tla elementu;
+
+border: 2px outset red; - dodawanie obramowania;
+
+border-radius: 10px; - zaokraglenie rogow;
+
+margin: 100px 0px; - odstepy.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Elementy HTML:
+
+
+
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6> - Używane do nagłówków(beda wytłuszczone i powieksyone);
+
+<p></p> - akapity;
+
+<span></span> - wydzielenie tekstu z cela stylizacii w CSS;
+
+<b></b> - Pogrubienie tekstu;
+
+<strong></strong> - Pogrubienie tekstu BARDZIEJ ważnego;
+
+-------------------------------------------------------------------------------------
+
+-->
+
+Szanowni Panstwo, dziekuje za rozpatrywaniemojego CV
+    . Wysylajac to CV wlasnie probuje weisc do branzy IT jako Junior frontend developer. W wielkim skrocie jest to proba sie przebrazowania, i sadze 
+    ze mam postepy. Strona internetowa, na ktorej  jest umieszczona informacja o mnie jest stworzona samodzielnie.
+
+    Szanowni Panstwo, dziekuje za rozpatrywaniemojego CV
+        . Wysylajac to CV wlasnie probuje weisc do branzy IT jako Junior frontend developer. W wielkim skrocie jest to proba sie przebrazowania, i sadze 
+        ze mam postepy. Strona internetowa, na ktorej  jest umieszczona informacja o mnie jest stworzona samodzielnie.
